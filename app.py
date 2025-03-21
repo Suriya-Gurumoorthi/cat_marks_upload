@@ -3,15 +3,15 @@ import pandas as pd
 import random
 import os
 
-
-hide_menu_style = """
+hide_streamlit_footer = """
     <style>
         #MainMenu {visibility: hidden;}
         footer {visibility: hidden;}
         header {visibility: hidden;}
+        .stDeployButton {visibility: hidden !important;}
     </style>
 """
-st.markdown(hide_menu_style, unsafe_allow_html=True)
+st.markdown(hide_streamlit_footer, unsafe_allow_html=True)
 
 # Check if template file exists
 template_file_path = "Template.xlsx"
