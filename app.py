@@ -3,6 +3,16 @@ import pandas as pd
 import random
 import os
 
+
+hide_menu_style = """
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
 # Check if template file exists
 template_file_path = "Template.xlsx"
 if not os.path.exists(template_file_path):
